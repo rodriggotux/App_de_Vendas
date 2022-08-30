@@ -12,10 +12,13 @@ class User(BaseModel):
 
 class Product(BaseModel):
     id: Optional[str] = None
-    user: User
+    name: User
     detail: str
     price: float
     available: bool = Flase
+    
+    class Config:
+        orm_mode = True
 
 class Request(BaseModel):
     id:Optional[str] = None
