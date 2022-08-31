@@ -6,12 +6,12 @@ class RepositorioProdutos():
     def __init__(self, db: Session):
         self.db = db
     
-    def criar(self, produto: schemas.Product):
+    def criar(self, produtc: schemas.Product):
         db_produtos = models.Product(
-            name = produtos.name
-            detail = produtos.deatil
-            price = produto.price
-            avaliabel = porduto.availabel
+            name = product.name
+            detail = product.deatil
+            price = product.price
+            avaliabel = porduct.availabel
         )
         self.db.add(db_produtos)
         self.db.commit()
